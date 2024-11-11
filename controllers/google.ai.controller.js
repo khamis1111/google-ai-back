@@ -135,11 +135,11 @@ export const aiGeminiFile = async (req, res) => {
     const uploadsDir = path.resolve("uploads"); // Specify the uploads directory
 
     // Read the files in the 'uploads' directory
-    fs.readdir(uploadsDir, (err, files) => {
-      if (err) {
+    fs.readdir(uploadsDir, (error, files) => {
+      if (error) {
         return res.status(401).json({
           status: "fail",
-          err: `Error reading the directory: ${err}`,
+          err: `Error reading the directory: ${error}`,
         });
       }
 
