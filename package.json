@@ -6,6 +6,9 @@
     "dev": "nodemon app.js",
     "start": "NODE_ENV=production nodemon app.js"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
